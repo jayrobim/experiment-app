@@ -1,16 +1,11 @@
-import vue from '@vitejs/plugin-vue';
-import AutoImport from 'unplugin-auto-import/vite';
-import Components from 'unplugin-vue-components/vite';
-import { VantResolver } from '@vant/auto-import-resolver';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
-export default {
-  plugins: [
-    vue(),
-    AutoImport({
-      resolvers: [VantResolver()],
-    }),
-    Components({
-      resolvers: [VantResolver()],
-    }),
-  ],
-};
+export default defineConfig({
+  plugins: [vue()],
+  base: 'experiment', // 设置为相对路径
+  build: {
+    outDir: 'experiment', // 输出目录
+    assetsDir: 'assets' // 静态资源子目录
+  }
+})

@@ -1,5 +1,9 @@
-# Vue 3 + Vite
+# 性状分离模拟实验
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+>1、支持单双性状
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+>2、支持自动模拟
+
+>3、支持手动修改模拟速度
+
+>4、柱状图和表格统计模拟结果
